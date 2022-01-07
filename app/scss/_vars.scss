@@ -1,0 +1,29 @@
+%opensans-300 {
+  font-family: 'OpenSans-LightItalic',
+  sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+%opensans-400 {
+  font-family: 'OpenSans-Regular',
+  sans-serif;
+  font-weight: 400;
+}
+%opensans-600 {
+  font-family: 'OpenSans-SemiBold',
+  sans-serif;
+  font-weight: 600;
+}
+%opensans-700 {
+  font-family: 'OpenSans-Bold',
+  sans-serif;
+  font-weight: 700;
+}
+
+$default: #333333;
+$accent: #2352de;
+$bc:#f6f6f8;
+$white: #ffffff;
+$grey: #DBDBED;
+$footer: #343740;
+$menu-bc: #7792E0;
