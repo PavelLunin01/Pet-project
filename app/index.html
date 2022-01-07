@@ -7,7 +7,7 @@
   <title>Pet-project</title>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
-<body>
+<body id="body">
   <header class="header" style="background-image: url('images/header/header-bg.jpg')">
     <div class="header__top">
       <div class="container">
@@ -252,11 +252,67 @@
             </p>
             <a class="contacts__link contacts__link--first" href="tel:380501111111">+38 (050) 111 11 11</a>
             <a class="contacts__link contacts__link--second"
-            href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+            href="mailto:frontend-monster@email.com" target="_blank">frontend-monster@email.com</a>
+
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg width="44" height="44">
+                    <use xlink: href="images/social/sprite.svg#fb"></use>
+                  </svg>
+                  <span class="sr-only">ссылка на инстаграм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg width="44" height="44">
+                    <use xlink: href="images/social/sprite.svg#insta"></use>
+                  </svg>
+                  <span class="sr-only">ссылка на фейсбук</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg width="44" height="44">
+                    <use xlink: href="images/social/sprite.svg#teleg"></use>
+                  </svg>
+                  <span class="sr-only">ссылка на телеграм</span>
+                </a>
+              </li>
+            </ul>
           </address>
+
+          <form class="contacts__form">
+            <div class="contacts__item">
+              <label class="contacts__label" for="name">
+                Ваше имя
+              </label>
+              <input class="contacts__input" type="text" id="name" name="name" placeholder="Иван" required>
+            </div>
+            <div class="contacts__item">
+              <label class="contacts__label" for="tel">
+                Номер телефона
+              </label>
+              <input class="contacts__input" type="tel" id="tel" name="tel" placeholder="+38 (050) 111 11 11" required>
+            </div>
+            <div class="contacts__item-area">
+              <label class="contacts__label" for="message">
+                Ваше сообщение
+              </label>
+              <textarea class="contacts__textarea" type="text" id="message" name="message" placeholder="Текст вашего сообщения" required></textarea>
+            </div>
+            <button class="contacts__btn btn" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <a class="logo" href="#body">
+        <img src="images/logo/logo.svg" alt="Логотип">
+        <span class="sr-only">вернуться к шапке сайта</span>
+      </a>
+    </footer>
   </main>
 
 
